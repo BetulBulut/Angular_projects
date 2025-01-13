@@ -1,0 +1,12 @@
+<div class="card">
+    <div class="card-header">
+      {{ title }}
+    </div>
+    <ul class="list-group list-group-flush">
+      <li *ngFor="let movie of movies"  class="list-group-item d-flex justify-content-between align-items-center">
+        <a href="/detail/{{movie.id}}"></a>
+        <span class="badge bg-primary">{{movie.id}}</span> {{movie.name}}
+        <button type="button" class="btn-close" aria-label="Close"></button>
+      </li>
+    </ul>
+  </div>
